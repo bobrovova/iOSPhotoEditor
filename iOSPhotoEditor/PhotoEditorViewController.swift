@@ -17,6 +17,8 @@ public final class PhotoEditorViewController: UIViewController {
     @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
     //To hold the drawings and stickers
     @IBOutlet weak var canvasImageView: UIImageView!
+    
+    @IBOutlet weak var canvasWireRackView: UIImageView!
 
     @IBOutlet weak var topToolbar: UIView!
     @IBOutlet weak var bottomToolbar: UIView!
@@ -89,7 +91,6 @@ public final class PhotoEditorViewController: UIViewController {
         topToolbar.layer.shadowRadius = 4
         topToolbar.layer.shadowOffset = .zero
         topToolbar.layer.shadowPath = UIBezierPath(rect: topToolbar.bounds).cgPath
-        
         
         let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
         edgePan.edges = .bottom

@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Ionicons.ttf">
+            <string>Ionicons</string>
+        </array>
         <array key="icomoon.ttf">
             <string>icomoon</string>
         </array>
@@ -19,6 +22,7 @@
                 <outlet property="bottomToolbar" destination="87h-1G-t5q" id="Pzi-Dw-qOq"/>
                 <outlet property="canvasImageView" destination="n3p-yR-4xc" id="OED-1L-YMz"/>
                 <outlet property="canvasView" destination="S1Y-ZS-dct" id="p6I-kg-UUU"/>
+                <outlet property="canvasWireRackView" destination="yCV-By-YbD" id="e3T-yk-JDd"/>
                 <outlet property="clearButton" destination="Kpe-Ez-Cio" id="C0i-3L-kLI"/>
                 <outlet property="colorPickerView" destination="Cy8-ap-fH9" id="KJx-KY-rfM"/>
                 <outlet property="colorPickerViewBottomConstraint" destination="mok-x4-xHA" id="SKq-N5-bcn"/>
@@ -45,10 +49,10 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9an-1W-thw">
-                            <rect key="frame" x="15" y="6.6666666666666643" width="30" height="37"/>
-                            <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="25"/>
+                            <rect key="frame" x="15" y="6" width="30" height="38"/>
+                            <fontDescription key="fontDescription" name="Ionicons" family="Ionicons" pointSize="25"/>
                             <size key="titleShadowOffset" width="1" height="0.0"/>
-                            <state key="normal" title="">
+                            <state key="normal" title="">
                                 <color key="titleColor" red="0.0" green="0.2274509804" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                             </state>
@@ -61,7 +65,7 @@
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                             <size key="titleShadowOffset" width="1" height="0.0"/>
                             <state key="normal" title="Done">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleColor" red="0.0" green="0.2274509804" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
@@ -89,6 +93,10 @@
                         </imageView>
                         <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n3p-yR-4xc">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                        </imageView>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yCV-By-YbD">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -137,10 +145,10 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qm4-f6-DBr">
                                     <rect key="frame" x="170.66666666666666" y="0.0" width="70" height="40"/>
-                                    <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="25"/>
+                                    <fontDescription key="fontDescription" name="Ionicons" family="Ionicons" pointSize="25"/>
                                     <size key="titleShadowOffset" width="1" height="0.0"/>
-                                    <state key="normal" title="">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="">
+                                        <color key="titleColor" red="0.94901960784313721" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                                     </state>
                                     <connections>
@@ -149,9 +157,9 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wH-LJ-SyD">
                                     <rect key="frame" x="255.66666666666671" y="0.0" width="70.333333333333343" height="40"/>
-                                    <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="25"/>
+                                    <fontDescription key="fontDescription" name="Ionicons" family="Ionicons" pointSize="25"/>
                                     <size key="titleShadowOffset" width="1" height="0.0"/>
-                                    <state key="normal" title="">
+                                    <state key="normal" title="">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                                     </state>
@@ -204,10 +212,10 @@
                             </subviews>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNH-TU-KxG">
-                            <rect key="frame" x="182" y="-14" width="50" height="62"/>
-                            <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="50"/>
+                            <rect key="frame" x="372" y="-15" width="30" height="63"/>
+                            <fontDescription key="fontDescription" name="Ionicons" family="Ionicons" pointSize="50"/>
                             <size key="titleShadowOffset" width="1" height="0.0"/>
-                            <state key="normal" title="">
+                            <state key="normal" title="">
                                 <color key="titleColor" red="0.0" green="0.22745098039215686" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                             </state>
@@ -218,10 +226,10 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="wNH-TU-KxG" secondAttribute="trailing" constant="12" id="0P1-eW-SIY"/>
                         <constraint firstAttribute="height" constant="60" id="7QB-HT-iOq"/>
                         <constraint firstAttribute="bottom" secondItem="ZRl-89-gRO" secondAttribute="bottom" constant="8" id="Bdt-cg-dLR"/>
                         <constraint firstAttribute="bottom" secondItem="wNH-TU-KxG" secondAttribute="bottom" constant="12" id="MHF-pQ-8R0"/>
-                        <constraint firstItem="wNH-TU-KxG" firstAttribute="centerX" secondItem="87h-1G-t5q" secondAttribute="centerX" id="dUX-Z1-0Ev"/>
                         <constraint firstItem="ZRl-89-gRO" firstAttribute="top" secondItem="87h-1G-t5q" secondAttribute="top" id="jMd-Og-yCn"/>
                         <constraint firstItem="ZRl-89-gRO" firstAttribute="leading" secondItem="87h-1G-t5q" secondAttribute="leading" constant="12" id="mn5-Hu-M5A"/>
                     </constraints>
